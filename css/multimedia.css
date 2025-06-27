@@ -1,0 +1,132 @@
+/* === Mobile-First Basis-Layout === */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout mit Grid */
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+h1 {
+  grid-area: header;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+}
+
+main {
+  grid-area: main;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+/* Bilder & Videos */
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "header header"
+      "nav main"
+      "footer footer";
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  body {
+    grid-template-columns: 250px 1fr;
+    padding: 2rem 4rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  nav {
+    padding: 1rem;
+  }
+}

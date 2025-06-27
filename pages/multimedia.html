@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/multimedia.css">
+    <title>Multimedia</title>
+  </head>
+  <body>
+    <h1>Multimedia</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#bilder">Bilder</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#youtube">YouTube</a></li>
+        <li><a href="#karte">Google Maps</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Bilder -->
+      <section id="bilder">
+        <h2>Bild</h2>
+        <img src="/assets/til.jpg" alt="Til" width="400" />
+        <p>JPG-Bild – gute Qualität und kleine Dateigrösse (ca. 300 KB)</p>
+
+        <h2>Bild aus Internet</h2>
+        <img
+          src="https://cdn2.yamaha-motor.eu/prod/product-assets/2025/YZF1000R1COMP/2025-Yamaha-YZF1000R1COMP-EU-Tech_Black-360-Degrees-001-03_Mobile.jpg"
+          alt="Yamaha"
+          width="400"
+        />
+        <p>Externes Bild, Yamaha R1</p>
+      </section>
+
+      <!-- Audio -->
+      <section id="audio">
+        <h2>Audio-Datei</h2>
+        <audio controls>
+          <source src="/assets/myinstants.mp3" type="audio/mpeg" />
+          Dein Browser unterstützt kein Audio.
+        </audio>
+        <p>MP3 – beliebtestes Format,ca. 4 MB</p>
+      </section>
+
+      <!-- Lokales Video -->
+      <section id="video">
+        <h2>Eigenes Video</h2>
+        <video width="500" controls>
+          <source src="/assets/court.mp4" type="video/mp4" />
+          Dein Browser unterstützt kein Video.
+        </video>
+        <p>MP4 – kompatibel, ca. 10 MB</p>
+      </section>
+
+      <!-- YouTube Video -->
+      <section id="youtube">
+        <h2>YouTube-Video</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9c0YL6VKHTo?si=2Dgw172PYrK99pkZ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Vorteil: Kein Speicherplatz nötig, Nachteil: Werbung, Internet
+          erforderlich
+        </p>
+      </section>
+
+      <!-- Google Maps -->
+      <section id="karte">
+        <h2>Mein Lehrbetrieb</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.245!2d7.588576!3d47.559598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b87c!2sCoop%20Hauptsitz!5e0!3m2!1sde!2sch!4v1610000000000"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+        <p>Google Maps – Standort meines Lehrbetriebs (Coop Basel)</p>
+      </section>
+
+      <!-- Kontakt -->
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>
+          📧
+          <a href="mailto:til.stegmueller@bbzbl-it.ch"
+            >til.stegmueller@bbzbl-it.ch</a
+          ><br />
+          📞 <a href="tel:+41765933093">076 593 30 93</a>
+        </p>
+      </section>
+
+      <!-- Externer Link -->
+      <section>
+        <h2>Externe Links</h2>
+        <p>
+          Mehr Infos zu meinem Gym gibt es auf
+          <a
+            href="https://www.update-fitness.ch/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >update-fitness.ch</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Til Stegmüller</p>
+    </footer>
+
+    <a href="/index.html">Zurück zu Home</a>
+  </body>
+</html>

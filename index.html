@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta
-      name="description"
-      content="Portfolio - Til Stegmüller"
-    >
-    <meta name="author" content="Til Stegmüller">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio - Til Stegmüller" />
+    <meta name="author" content="Til Stegmüller" />
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Portfolio</title>
   </head>
   <body>
@@ -21,6 +19,7 @@
         <li><a href="#personalien">Personalien</a></li>
         <li><a href="#schulen">Besuchte Schulen</a></li>
         <li><a href="#hobbys">Hobbys</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
 
@@ -64,8 +63,9 @@
         <article>
           <h3>Sport</h3>
           <p>
-            Ich spiele gern <strong><a href="/pages/basketball.html">Basketball</a></strong> im Verein und gehe manchmal
-            draussen und im Gym <em>trainieren</em>.
+            Ich spiele gern
+            <strong><a href="/pages/basketball.html">Basketball</a></strong> im
+            Verein und gehe manchmal draussen und im Gym <em>trainieren</em>.
           </p>
         </article>
         <article>
@@ -78,10 +78,115 @@
         <article>
           <h3>Freizeit</h3>
           <p>
-            In der Freizeit gehe ich gerne mit <strong>Kollegen</strong> oder mit
-            <em>Freundin</em> raus.
+            In der Freizeit gehe ich gerne mit <strong>Kollegen</strong> raus.
           </p>
         </article>
+        <article>
+          <h3>Multimedia</h3>
+          <p>
+            <a href="/pages/multimedia.html">Hier</a> zu meiner Multimedia Webiste
+          </p>
+        </article>
+
+      </section>
+
+      <hr />
+
+      <section id="kontakt">
+        <h2>Kontaktformular</h2>
+        <p>Frage zu HTML oder CSS? - und ich werde dir helfen</p>
+
+        <form
+          action="https://gibm.becknet.ch/formular/formular.php"
+          method="post"
+        >
+          <!-- Name -->
+          <label for="vorname">Vorname:</label><br />
+          <input
+            type="text"
+            id="vorname"
+            name="vorname"
+            required
+            placeholder="Julius"
+            autofocus
+          /><br /><br />
+
+          <label for="nachname">Nachname:</label><br />
+          <input
+            type="text"
+            id="nachname"
+            name="nachname"
+            required
+            placeholder="Bruttel"
+          /><br /><br />
+
+          <!-- E-Mail -->
+          <label for="kontaktemail">E-Mail:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="name@mail.ch"
+          /><br /><br />
+
+           <!-- Telefon optional -->
+          <label for="telefon">Telefonnummer (optional):</label><br />
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            pattern="[0-9]{10}"
+            placeholder="zB. 079 123 45 67"
+          /><br /><br />
+
+          <!-- Thema  -->
+          <label for="thema">Thema deiner Frage:</label><br />
+          <select id="thema" name="thema" required>
+            <option value="">Bitte auswählen</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="andere">Andere Sprachen</option></select
+          ><br /><br />
+
+          <!-- Einfachauswahl (Radio) -->
+          <label>Erfahrung:</label><br />
+          <input
+            type="radio"
+            id="anf"
+            name="erfahrung"
+            value="Anfänger"
+            required
+          />
+          <label for="anf">Anfänger</label>
+          <input
+            type="radio"
+            id="fort"
+            name="erfahrung"
+            value="Fortgeschritten"
+          />
+          <label for="fort">Fortgeschritten</label>
+          <input type="radio" id="profi" name="erfahrung" value="Profi" />
+          <label for="profi">Profi</label><br /><br />
+
+          <!-- Nachricht -->
+          <label for="nachricht">Deine Nachricht:</label><br />
+          <textarea
+            id="nachricht"
+            name="nachricht"
+            rows="5"
+            cols="40"
+            required
+            minlength="10"
+            maxlength="500"
+            placeholder="Beschreibe hier deine Frage..."
+          ></textarea
+          ><br /><br />
+
+          <!-- Senden -->
+          <input type="submit" value="Nachricht senden" />
+          <input type="reset" value="Zurücksetzen" />
+        </form>
       </section>
     </main>
 
